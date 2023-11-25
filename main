@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const productManager = new ProductManager('products.json');
 const cartManager = new CartManager('carts.json', productManager);
 
-// Rutas para productos
+
 const productsRouter = express.Router();
 
 productsRouter.get('/', (req, res) => {
